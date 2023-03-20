@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1><center> Survey Form </center></h1>
+    <form onsubmit="return validateForm()">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+		<div id="nameError" class="error"></div>
+		
+		<label for="age">Age:</label>
+		<input type="text" id="age" name="age">
+		<div id="ageError" class="error"></div>
+		
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">--Select--</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+        <br>
+        <br>
+		<div id="genderError" class="error"></div>
+
+        <label for="contact detail">CONTACT DETAIL</label>
+
+        <label for="father name">father name</label>
+        <input type="text" id="father name" name="father name">
+
+        <label for="mother name">mother name</label>
+        <input type="text" id="mother name" name="mother name">
+
+        <label for="mobile no">mobile no</label>
+        <input type="text" id="mobile no" name="mother name">
+		
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email">
+		<div id="emailError" class="error"></div>
+		
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea>
+		<div id="messageError" class="error"></div>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+<script src="../SURVEY_FORM/script.js"></script>
+</html>
